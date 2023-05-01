@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import Counter from './Participation/page'
 import Participation from './Participation/page'
 import Startup from './startups/page'
 
