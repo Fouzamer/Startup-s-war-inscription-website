@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="flex max-w-screen-xl flex-col items-center justify-between place-self-center p-12 max-[500px]:m-0 ">
       <img src="/assets/Asset 7.svg" className='w-[60%] m-auto max-[500px]:w-[80%]'/>
-      <p id='description-i' className='text-lg text-center w-[60%]  m-8 max-[400px]:text-xs w-[90%]'>
+      <p id='description-i' className='text-lg text-center w-[60%]  m-8 max-[400px]:text-xs:w-[90%]'>
         La Startup’s war est une compétition de création de startup(Jeune entreprise novatrice dans le secteur des nouvelles technologies, sur Internet). Elle est ouverte à tous les étudiants de l'université et vise à stimuler la créativité et l'entrepreneuriat chez les jeunes.
       </p>
       <h2 id='prix' className="text-4xl font-bold text-center m-4 max-[400px]:text-l">
