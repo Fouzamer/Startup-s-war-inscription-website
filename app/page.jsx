@@ -1,4 +1,4 @@
-import Participation from './Participation/page'
+import Participation from './Participation/page.js'
 import Startup from './startups/page'
 
 export default function Home() {
