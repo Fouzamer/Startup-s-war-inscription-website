@@ -1,8 +1,7 @@
 import Image from 'next/image'
-import Participation from './participation/page'
-// import localFont from '@next/font/local'
-
-// const myFont = localFont({ src: './/assets/fonts/spacerangerboldital.ttf'})
+import Counter from './Participation/page'
+import Participation from './Participation/page'
+import Startup from './startups/page'
 
 export default function Home() {
   return (
@@ -42,6 +41,8 @@ export default function Home() {
         </div>
       </div>
       <Participation />
+      <h1 className='text-5xl font-bold m-4 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text' >Les Startups</h1>
+      <Startup />
     </main>
   )
 }

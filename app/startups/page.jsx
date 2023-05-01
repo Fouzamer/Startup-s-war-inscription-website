@@ -1,12 +1,26 @@
+'use client'
+import { useState, useEffect } from "react";
+
 export default function Startup(props) {
-    return(
-        <div>
-            <div>
-                <img src={props.cover} alt="" />
-                <h2 id="Nom">{props.name}</h2>
-                <p id="description">{props.desc}</p>
-                <button onClick={vote}>vote</button>
-            </div>
+  const [startups, setStartups] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const res = await fetch('../api/post');
+      const data = await res.json();
+      setStartups(data);
+    }
+    fetchData();
+  }, []);
+
+  return (
+    <div className="border-2 rounded p-6 w-full flex flex-wrap-reverse justify-between items-center">
+      { startups.map((startup) => (
+        <div key={startup.id} className="bg-white rounded-lg p-2 my-2 flex flex-col w-[32.5%] ring-2">
+          <h2 id="Nom" className="text-black font-bold text-lg place-self-start ">{startup.projectName}</h2>
+          <p id="description" className="text-black font-thin text-s italic">{startup.description}</p>
         </div>
-    )
+      ))}
+    </div>
+  );
 }
