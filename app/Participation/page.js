@@ -41,10 +41,10 @@ export default function Participation(){
               <p className="text-2xl mb-4">Participer</p>
               <form onSubmit={formik.handleSubmit} className="flex flex-col justify-center w-full">
                   <label htmlFor="projectName" id="ProjectName"  >Nom de la Startup</label>
-                  <input type="text" name="projectName" value={formik.values.projectName} onChange={formik.handleChange} placeholder=" Nom du Project" className="rounded bg-transparent border-2 p-1 my-1"/>
+                  <input type="text" name="projectName" required value={formik.values.projectName} onChange={formik.handleChange} placeholder=" Nom du Project" className="rounded bg-transparent border-2 p-1 my-1"/>
                   <label htmlFor="names">Membre(s) de l'équipe</label>
                   <div className="flex flex-row justify-between max-[500px]:flex-col">
-                      <input className="rounded bg-transparent border-2 w-3/12 p-1 my-1 max-[500px]:w-full" id="member-1" name="member1" value={formik.values.member1} onChange={formik.handleChange} placeholder=" Membre 1" type="text" />
+                      <input className="rounded bg-transparent border-2 w-3/12 p-1 my-1 max-[500px]:w-full" id="member-1" name="member1" required value={formik.values.member1} onChange={formik.handleChange} placeholder=" Membre 1" type="text" />
                       <input className="rounded bg-transparent border-2 w-3/12 p-1 my-1 max-[500px]:w-full" id="member-2" name="member2" value={formik.values.member2} onChange={formik.handleChange} placeholder=" Membre 2" type="text" />
                       <input className="rounded bg-transparent border-2 w-3/12 p-1 my-1 max-[500px]:w-full" id="member-3" name="member3" value={formik.values.member3} onChange={formik.handleChange} placeholder=" Membre 3" type="text" />
                   </div>

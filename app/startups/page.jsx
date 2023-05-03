@@ -14,9 +14,9 @@ export default function Startup(props) {
   }, []);
 
   return (
-    <div className="border-2 rounded p-6 w-full flex flex-wrap-reverse justify-between items-center">
+    <div className="border-2 rounded p-6 w-full flex flex-wrap-reverse items-center">
       { startups.map((startup) => (
-        <div key={startup.id} className="bg-white rounded-lg p-2 my-2 flex flex-col w-[300px] h-36 ring-2 max-[400px]:w-full">
+        <div key={startup.id} className="bg-white rounded-lg p-2 my-2 mx-1 flex-col w-[300px] h-36 ring-2 max-[400px]:w-full">
           <h2 id="Nom" className="text-black font-bold text-lg place-self-start ">{startup.projectName}</h2>
           <p id="description" className="text-black font-thin text-s italic">{startup.description}</p>
         </div>
