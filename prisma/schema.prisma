@@ -14,8 +14,15 @@ model Startup {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   projectName  String?
   member1 String?
+  number1 Int?
   member2 String?
+  number2 Int?
   member3 String?
+  number3 Int?
+  member4 String?
+  number4 Int?
+  member5 String?
+  number5 Int?
   image String?
   description String?
   vote Int?

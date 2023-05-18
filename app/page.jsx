@@ -1,5 +1,7 @@
 import Participation from './Participation/page.js'
 import Startup from './startups/page'
+import ToasterProvider from './provider/ToasterProvider.js'
+import { Sponsors } from './Sponsors/page.js'
 
 export default function Home() {
   return (
@@ -14,7 +16,7 @@ export default function Home() {
       <div id='le-grand-prix' className='bg-gradient-to-br from-indigo-950 to-transparent rounded p-12 m-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-[#ffffff20] flex flex-col justify-center items-center content-center
         max-[555px]:p-6 max-[320px]:w-full'>
         <h1 className='text-5xl font-bold m-4 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text
-          max-[480px]:text-4xl max-[320px]:text-2lg text-center mx-0  '>50 000 FC</h1>
+          max-[480px]:text-4xl max-[320px]:text-2lg text-center mx-0  '>100 000 FC</h1>
         <p className='text-xl max-[320px]:text-base text-center'>
           À gagner parmi 
           tant d’autres
@@ -41,9 +43,12 @@ export default function Home() {
           </p>
         </div>
       </div>
+      <ToasterProvider />
       <Participation />
       <h1 className='text-5xl text-center font-bold m-4 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text' >Les Startups</h1>
       <Startup />
+      <h1 className='text-5xl text-center font-bold m-4 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text' >Nos Sponsors</h1>
+      <Sponsors />
     </main>
   )
 }
