@@ -1,7 +1,7 @@
 import Participation from './Participation/page.js'
 import Startup from './startups/page'
 import ToasterProvider from './provider/ToasterProvider.js'
-import { Sponsors } from './Sponsors/page.js'
+import Sponsors from './Sponsors/page.js'
 
 export default function Home() {
   return (
