@@ -1,4 +1,4 @@
-export function Sponsors() {
+export default function Sponsors() {
     return(   
 <div className=" grid mb-8 border  rounded-lg shadow-sm border-gray-700  md:mb-12 md:grid-cols-2">
     
