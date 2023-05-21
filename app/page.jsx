@@ -10,14 +10,14 @@ export default function Home() {
       <p id='description-i' className='text-lg text-white text-center w-[60%]  m-8 max-[400px]:text-xs:w-[90%]'>
         La Startup’s war est une compétition de création de startup(Jeune entreprise novatrice dans le secteur des nouvelles technologies, sur Internet). Elle est ouverte à tous les étudiants de l'université et vise à stimuler la créativité et l'entrepreneuriat chez les jeunes.
       </p>
-      <h2 id='prix' className="text-4xl font-bold text-center m-4 max-[400px]:text-l">
+      <h2 id='prix' className="text-4xl text-white font-bold text-center m-4 max-[400px]:text-l">
           Les prix à gagner
       </h2>
       <div id='le-grand-prix' className='bg-gradient-to-br from-indigo-950 to-transparent rounded p-12 m-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-[#ffffff20] flex flex-col justify-center items-center content-center
         max-[555px]:p-6 max-[320px]:w-full'>
-        <h1 className='text-5xl font-bold m-4 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text
+        <h1 className='text-5xl text-white font-bold m-4 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text
           max-[480px]:text-4xl max-[320px]:text-2lg text-center mx-0  '>100 000 FCFA</h1>
-        <p className='text-xl max-[320px]:text-base text-center'>
+        <p className='text-xl text-white max-[320px]:text-base text-center'>
           À gagner parmi 
           tant d’autres
         </p>
@@ -26,7 +26,7 @@ export default function Home() {
         max-[900px]:flex-col'>
         <div id='prix-n2' className='w-48 bg-gradient-to-br mx-2 from-indigo-950 to-transparent rounded p-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-[#ffffff20] flex flex-col justify-center items-center content-center my-2'>
           <img src="/assets/icons8-diploma-96.png" />
-          <p className='text-center'>
+          <p className='text-center text-white'>
             Des attestations de participation
           </p>
         </div>
@@ -38,16 +38,16 @@ export default function Home() {
         </div>
         <div id='prix-n3' className='w-48 bg-gradient-to-br mx-2 from-indigo-950 to-transparent rounded p-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-[#ffffff20] flex flex-col justify-center items-center content-center my-2'>
           <img src="/assets/icons8-company-96.png" />
-          <p className='text-center'>
+          <p className='text-center text-white'>
             Une visite dans une Startup
           </p>
         </div>
       </div>
       <ToasterProvider />
       <Participation />
-      <h1 className='text-5xl text-center font-bold m-4 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text' >Les Startups</h1>
+      <h1 className='text-5xl text-center text-white font-bold m-4 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text' >Les Startups</h1>
       <Startup />
-      <h1 className='text-5xl text-center font-bold m-4 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text' >Nos Sponsors</h1>
+      <h1 className='text-5xl text-center text-white font-bold m-4 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text' >Nos Sponsors</h1>
       <Sponsors />
     </main>
   )
