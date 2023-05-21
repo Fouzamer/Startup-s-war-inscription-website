@@ -41,12 +41,12 @@ export default function Participation(){
   function Momo() {
     return(
       <div className="bg-gradient-to-br from-indigo-950 to-transparent rounded p-12 m-6  bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-[#ffffff20] flex flex-col justify-center items-center content-center">
-        <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Cher PDG de {formik.values.projectName}</h5>
-        <p className="mb-3 font-normal text-gray-500 dark:text-white">Nous vous remercions chaleureusement rour votre participation à la Startup's War</p>
-        <p className="mb-3 font-normal text-gray-500 dark:text-white"> Votre engagement est très apprécié.</p>
-        <p className="mb-3 font-normal text-gray-500 dark:text-white">Veuillez régler les frais de participation sur le Numero Mobile Money ci-dessous</p>
-        <p className="mb-3 text-lg font-bold text-gray-500 dark:text-white">+229 97 16 50 37</p>
-        <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">🎉Merci de participé à la Startup's War !🎉</h5>
+        <h5 className="mb-2 text-2xl font-semibold tracking-tight text-white">Cher PDG de {formik.values.projectName}</h5>
+        <p className="mb-3 font-normal text-white">Nous vous remercions chaleureusement rour votre participation à la Startup's War</p>
+        <p className="mb-3 font-normal text-white"> Votre engagement est très apprécié.</p>
+        <p className="mb-3 font-normal text-white">Veuillez régler les frais de participation sur le Numero Mobile Money ci-dessous</p>
+        <p className="mb-3 text-lg font-bold text-white">+229 97 16 50 37</p>
+        <h5 className="mb-2 text-2xl font-semibold tracking-tight text-white">🎉Merci de participé à la Startup's War !🎉</h5>
       </div>
     )
   }
