@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         <div id='prix-n1' className='w-48 bg-gradient-to-br mx-2 from-indigo-950 to-transparent rounded p-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-[#ffffff20] flex flex-col justify-center items-center content-center my-2'>
           <img src="/assets/icons8-trophy-96.png" />
-          <p className='text-center'>
+          <p className='text-center text-white'>
             Un trophée à l’équipe gagnante de la finale
           </p>
         </div>
@@ -45,9 +45,9 @@ export default function Home() {
       </div>
       <ToasterProvider />
       <Participation />
-      <h1 className='text-5xl text-center text-white font-bold m-4 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text' >Les Startups</h1>
+      <h1 className='text-5xl text-center font-bold m-4 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text' >Les Startups</h1>
       <Startup />
-      <h1 className='text-5xl text-center text-white font-bold m-4 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text' >Nos Sponsors</h1>
+      <h1 className='text-5xl text-center font-bold m-4 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text' >Nos Sponsors</h1>
       <Sponsors />
     </main>
   )
