@@ -55,20 +55,20 @@ export default function Participation(){
       <div>
             {!showMomo ? (
               <div className="bg-gradient-to-br from-indigo-950 to-transparent rounded p-12 m-6 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-[#ffffff20] flex flex-col justify-center items-center content-center">
-              <h3 className="text-4xl font-bold m-4">Règles d’inscriptions</h3>
+              <h3 className="text-4xl text-white font-bold m-4">Règles d’inscriptions</h3>
               <ul className="w-full m-6">
-                  <li>Être régulièrement inscrit à ESGIS</li>
-                  <li>Avoir une idée de projet de création d'entreprise</li>
-                  <li>Présentation convaincante</li>
+                  <li className='text-white'>Être régulièrement inscrit à ESGIS</li>
+                  <li  className='text-white'>Avoir une idée de projet de création d'entreprise</li>
+                  <li  className='text-white'>Présentation convaincante</li>
               </ul>
-              <h1 className='text-5xl font-bold mt-5 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text'>5000 FC</h1>
-              <p className="text-2xl mb-6">Frais de participation</p>
+              <h1 className='text-5xl font-bold mt-5 bg-gradient-to-r from-orange-600 to-amber-400 text-transparent bg-clip-text'>5000 FCFA</h1>
+              <p className="text-2xl text-white mb-6">Frais de participation</p>
               <div className="border-2 rounded p-6 w-full flex flex-col items-center">
-                  <p className="text-2xl mb-4">Participer</p>
+                  <p className="text-2xl text-white mb-4">Participer</p>
                   <form onSubmit={formik.handleSubmit} className="flex flex-col justify-center w-full">
-                      <label htmlFor="projectName" id="ProjectName"  >Nom de la Startup</label>
+                      <label className='text-white' htmlFor="projectName" id="ProjectName"  >Nom de la Startup</label>
                       <input type="text" name="projectName" required value={formik.values.projectName} onChange={formik.handleChange} placeholder=" Nom du Project" className="rounded bg-transparent border-2 p-1 my-1"/>
-                      <label htmlFor="names">Membre(s) de l'équipe</label>
+                      <label className='text-white' htmlFor="names">Membre(s) de l'équipe</label>
                       <div className="flex flex-wrap justify-between max-[500px]:flex-col">
                           <div className='flex flex-col w-3/12 max-sm:w-full my-1'>
                           <input className="rounded bg-transparent border-2 p-1 my-1 w-full" id="member-1" name="member1" required value={formik.values.member1} onChange={formik.handleChange} placeholder=" Membre 1" type="text" />
@@ -91,9 +91,9 @@ export default function Participation(){
                           <input className="rounded bg-transparent border-2 p-1 my-1 w-full" id="number-5" name="number5" value={formik.values.number5} onChange={formik.handleChange} placeholder={`numéro de ${formik.values.member5}`} type='number' />
                           </div>
                       </div>
-                      <label htmlFor="description">Description</label>
+                      <label className='text-white' htmlFor="description">Description</label>
                       <textarea type="textarea" placeholder=" Veuillez entrer une brève description de votre startup" name='description' value={formik.values.description} onChange={formik.handleChange} className="rounded bg-transparent border-2  p-1 my-1"/>
-                      <button type='submit' onSubmit className="border-solid border-2 border-slate-0 rounded w-min place-self-center p-1 mt-6 hover:bg-white hover:text-black">Soumettre</button>
+                      <button type='submit' onSubmit className="border-solid border-2 border-slate-0 rounded w-min text-white place-self-center p-1 mt-6 hover:bg-white hover:text-black">Soumettre</button>
                   </form>
               </div>
           </div>
