@@ -92,7 +92,7 @@ export default function Participation(){
                           </div>
                       </div>
                       <label className='text-white' htmlFor="description">Description</label>
-                      <textarea type="textarea" placeholder=" Veuillez entrer une brève description de votre startup" name='description' value={formik.values.description} onChange={formik.handleChange} className="rounded bg-transparent border-2  p-1 my-1"/>
+                      <textarea type="textarea" placeholder=" Veuillez entrer une description de votre startup" name='description' value={formik.values.description} onChange={formik.handleChange} className="rounded bg-transparent border-2  p-1 my-1"/>
                       <button type='submit' onSubmit className="border-solid border-2 border-slate-0 rounded w-min text-white place-self-center p-1 mt-6 hover:bg-white hover:text-black">Soumettre</button>
                   </form>
               </div>
